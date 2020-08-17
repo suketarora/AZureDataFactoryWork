@@ -1,0 +1,12 @@
+{
+	"name": "LinkedIN",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkedIn",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	}
+}
