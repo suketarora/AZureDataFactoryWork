@@ -1,0 +1,12 @@
+{
+	"name": "LinkedIn",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://api.linkedin.com/v2/adCampaignsV2/",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
