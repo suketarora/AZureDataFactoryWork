@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "https://api.linkedin.com/v2/adCampaignsV2/",
+			"url": "https://www.linkedin.com/oauth/v2/accessToken?grant_type=client_credentials&client_id=81iwezha96lgcq&client_secret=6jHwTHD3tPwG26T2",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
