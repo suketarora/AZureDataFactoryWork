@@ -46,7 +46,7 @@
 					},
 					"activities": [
 						{
-							"name": "Copy data1",
+							"name": "Export Table",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
@@ -58,8 +58,18 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
+								"source": {
+									"type": "AzureMySqlSource",
+									"queryTimeout": "02:00:00"
+								},
 								"enableStaging": false
-							}
+							},
+							"inputs": [
+								{
+									"referenceName": "SQLTable",
+									"type": "DatasetReference"
+								}
+							]
 						}
 					]
 				}
