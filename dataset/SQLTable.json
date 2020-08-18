@@ -5,8 +5,22 @@
 			"referenceName": "AzureMySql",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"TableName": {
+				"type": "string"
+			},
+			"SchemaName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "AzureMySqlTable",
-		"schema": []
+		"schema": [],
+		"typeProperties": {
+			"tableName": {
+				"value": "@dataset().TableName",
+				"type": "Expression"
+			}
+		}
 	}
 }
