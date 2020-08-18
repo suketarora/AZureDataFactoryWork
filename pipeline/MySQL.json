@@ -62,12 +62,49 @@
 									"type": "AzureMySqlSource",
 									"queryTimeout": "02:00:00"
 								},
-								"enableStaging": false
+								"sink": {
+									"type": "DelimitedTextSink",
+									"storeSettings": {
+										"type": "AzureBlobStorageWriteSettings"
+									},
+									"formatSettings": {
+										"type": "DelimitedTextWriteSettings",
+										"quoteAllText": true,
+										"fileExtension": ".txt"
+									}
+								},
+								"enableStaging": false,
+								"translator": {
+									"type": "TabularTranslator",
+									"typeConversion": true,
+									"typeConversionSettings": {
+										"allowDataTruncation": true,
+										"treatBooleanAsNumber": false
+									}
+								}
 							},
 							"inputs": [
 								{
 									"referenceName": "SQLTable",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"TableName": {
+											"value": "@item().Tables_in_suket",
+											"type": "Expression"
+										}
+									}
+								}
+							],
+							"outputs": [
+								{
+									"referenceName": "CSVTable",
+									"type": "DatasetReference",
+									"parameters": {
+										"FileName": {
+											"value": "@concat(item().table_name,'.csv')",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
