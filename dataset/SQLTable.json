@@ -1,5 +1,5 @@
 {
-	"name": "GenericTable",
+	"name": "SQLTable",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureMySql",
