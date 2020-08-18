@@ -15,7 +15,28 @@
 		},
 		"annotations": [],
 		"type": "AzureMySqlTable",
-		"schema": [],
+		"schema": [
+			{
+				"name": "ID",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "Name",
+				"precision": 100,
+				"scale": 0
+			},
+			{
+				"name": "Model",
+				"precision": 100,
+				"scale": 0
+			},
+			{
+				"name": "Length",
+				"precision": 10,
+				"scale": 0
+			}
+		],
 		"typeProperties": {
 			"tableName": {
 				"value": "@dataset().TableName",
