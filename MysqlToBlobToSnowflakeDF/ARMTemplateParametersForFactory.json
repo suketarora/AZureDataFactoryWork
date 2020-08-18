@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "MysqlToBlobToSnowflakeDF"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureFunction1_functionKey": {
+			"value": ""
+		},
+		"AzureFunction2_functionKey": {
+			"value": ""
+		},
+		"AzureMySql_connectionString": {
+			"value": ""
+		},
+		"AzureBlobStorage2_connectionString": {
+			"value": ""
+		},
+		"AzureFunction1_properties_typeProperties_functionAppUrl": {
+			"value": "https://mysqltoblob.azurewebsites.net"
+		},
+		"AzureFunction2_properties_typeProperties_functionAppUrl": {
+			"value": "https://blobtosnowflakeapp.azurewebsites.net"
+		},
+		"AzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://suketKeyVault.vault.azure.net/"
+		},
+		"LinkedIn_properties_typeProperties_url": {
+			"value": "https://www.linkedin.com/oauth/v2/accessToken?grant_type=client_credentials&client_id=81iwezha96lgcq&client_secret=6jHwTHD3tPwG26T2"
+		},
+		"RestService1_properties_typeProperties_url": {
+			"value": "https://developer.nrel.gov/api/alt-fuel-stations/v1.json?fuel_type=E85,ELEC&state=CA&limit=2&api_key=3ivMHboBPbEsA6fYq4RaM6mSbRWHP88QWOUZcl5a"
+		}
+	}
+}
