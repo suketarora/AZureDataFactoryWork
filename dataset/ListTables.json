@@ -1,0 +1,12 @@
+{
+	"name": "ListTables",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureMySql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureMySqlTable",
+		"schema": []
+	}
+}
